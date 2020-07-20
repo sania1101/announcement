@@ -1,0 +1,32 @@
+###ClassRooms add new room
+POST   http://localhost:4000/announcement/add  HTTP/1.1
+Content-Type: application/json
+
+{
+    "Title":"Новинаlll",
+    "Description": "В україні новина",
+    "CreateDate": "2020-01-1"
+}
+
+###ClassRooms delete  room
+DELETE   http://localhost:4000/announcement/delete/5f10765caec4f9395c5c357d HTTP/1.1  
+
+
+###ClassRooms edit  room
+PUT    http://localhost:4000/announcement/update/5f10765caec4f9395c5c357d HTTP/1.1  
+Content-Type: application/json
+
+{
+    "Title":"Карантин",
+    "Description": "В україні новина",
+    "CreateDate": "2020-01-1"
+}
+
+###ClassRooms get all  room
+
+GET http://localhost:4000/announcement/read HTTP/1.1  
+
+
+###ClassRooms get  room by id
+ 
+GET http://localhost:4000/announcement/read/5f10765caec4f9395c5c357d HTTP/1.1  
